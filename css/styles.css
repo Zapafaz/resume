@@ -1,0 +1,130 @@
+/* TODO: FIX ALIGNMENT OF NON-h2 ELEMENTS (mid-align) */
+
+* {
+	font-family: 'Roboto Slab', serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #339b5a;
+}
+
+a:visited {
+	color: #175a3a;
+}
+
+#container {
+	max-width: 56%;
+	margin: auto;
+}
+
+/* TODO: ADD MY LOGO */
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+em {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.subhead > h3, .subhead > em {
+	line-height: 1.8em;
+}
+
+/* BASIC ALIGNMENT */
+
+.mid {
+	padding-left: 8em;
+}
+
+.right {
+	text-align: right;
+}
+
+.date {
+	float: right;
+}
+
+/* LIST STYLING */
+ul {
+	list-style: outside;
+	padding: 0 0 1em 1em;
+	text-indent: -1em;
+}
+
+li {
+	padding-left: 1em;
+	line-height: 1.6em;
+}
+
+.no-bullet {
+	list-style-type: none;
+}
+
+/* TODO: FIX TRIANGLE LIST BULLETS */
+.triangle {
+	
+}
+
+
+/* SCALING */
+@media screen and (max-width: 1200px){
+	.mid{
+		padding-left: 4em;
+	}
+	
+	#container{
+		max-width: 80%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	h1 {
+		font-size: 1.6em;
+		padding-bottom: 1em;
+	}
+	
+	.mid {
+		padding-left: 3em;
+		clear: both;
+	}
+	
+	.location {
+		margin-bottom: 0.5em;
+	}
+	
+	.subhead > h3, .subhead > em {
+	line-height: 1.4em;
+}
+	
+	.date {
+		float: none;
+	}
+	
+	.date:before {
+		content: "\0a";
+		display: block;
+	}
+	
+	#container{
+		max-width: 90%;
+	}
+}
