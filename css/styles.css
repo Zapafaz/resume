@@ -1,5 +1,3 @@
-/* TODO: FIX ALIGNMENT OF NON-h2 ELEMENTS (mid-align) */
-
 * {
 	font-family: 'Roboto Slab', serif;
 	-webkit-box-sizing: border-box;
@@ -8,16 +6,7 @@
 	margin: 0;
 	padding: 0;
 	line-height: 1.4em;
-}
-
-a {
-	font-weight: bold;
-	text-decoration: none;
-	color: #339b5a;
-}
-
-a:visited {
-	color: #175a3a;
+	font-size: 1em;
 }
 
 #container {
@@ -25,19 +14,10 @@ a:visited {
 	margin: auto;
 }
 
-/* TODO: ADD MY LOGO */
-
 h1 {
-	text-align: center;
-}
-
-h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
-}
-
-h3 {
-	font-size: 1em;
+	font-size: 1.6em;
 }
 
 em {
@@ -45,8 +25,12 @@ em {
 	font-style: italic;
 }
 
-.subhead > h3, .subhead > em {
+.subhead > h2, .subhead > em {
 	line-height: 1.8em;
+}
+
+.location {
+	
 }
 
 /* BASIC ALIGNMENT */
@@ -79,9 +63,8 @@ li {
 	list-style-type: none;
 }
 
-/* TODO: FIX TRIANGLE LIST BULLETS */
-.triangle {
-	
+.circle {
+	list-style-type: circle;
 }
 
 
@@ -97,10 +80,6 @@ li {
 }
 
 @media screen and (max-width: 800px){
-	h1 {
-		font-size: 1.6em;
-		padding-bottom: 1em;
-	}
 	
 	.mid {
 		padding-left: 3em;
@@ -111,7 +90,7 @@ li {
 		margin-bottom: 0.5em;
 	}
 	
-	.subhead > h3, .subhead > em {
+	.subhead > h2, .subhead > em {
 	line-height: 1.4em;
 }
 	
