@@ -19,6 +19,8 @@ body {
 	margin: auto;
 }
 
+/* FONT ADJUSTMENTS */
+
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
@@ -32,10 +34,6 @@ em {
 
 .subhead > h2, .subhead > em {
 	line-height: 1.8em;
-}
-
-.location {
-	
 }
 
 /* BASIC ALIGNMENT */
@@ -74,7 +72,7 @@ li {
 
 
 /* SCALING */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 	.mid{
 		padding-left: 4em;
 	}
@@ -84,7 +82,7 @@ li {
 	}
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 	
 	.mid {
 		padding-left: 3em;
@@ -110,5 +108,23 @@ li {
 	
 	#container{
 		max-width: 90%;
+	}
+}
+
+/* PRINT */
+@media print {
+	* {
+		color: #000;
+	}
+	body {
+		background-color: #fff;
+	}
+/* assume printing on 8.5" width paper = 1" left/right margin */
+	#container {
+		max-width: 6.5in;
+	}
+/* padding does not support inches as a unit */
+	.mid {
+		padding-left: 5em;
 	}
 }
