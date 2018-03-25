@@ -14,11 +14,6 @@ body {
 	background-color: #eee;
 }
 
-#container {
-	max-width: 56%;
-	margin: auto;
-}
-
 /* FONT ADJUSTMENTS */
 
 h1 {
@@ -37,6 +32,11 @@ em {
 }
 
 /* BASIC ALIGNMENT */
+
+#container {
+	max-width: 56%;
+	margin: 3em auto;
+}
 
 .mid {
 	padding-left: 8em;
@@ -112,18 +112,13 @@ li {
 }
 
 /* PRINT */
+/* set margins in page setup / print options to 0 on all sides*/
 @media print {
-	* {
-		color: #000;
-	}
-	body {
-		background-color: #fff;
-	}
-/* assume printing on 8.5" width paper = 1" left/right margin */
+/* assume printing on letter format paper (i.e. 8.5" width) = 1" left/right margin */
 	#container {
 		max-width: 6.5in;
 	}
-/* padding does not support inches as a unit */
+/* padding (and margin) do not support inches as a unit in most applications */
 	.mid {
 		padding-left: 5em;
 	}
