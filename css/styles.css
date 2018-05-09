@@ -38,6 +38,10 @@ em {
 	margin: 3em auto;
 }
 
+#me {
+	padding: 0;
+}
+
 .mid {
 	padding-left: 8em;
 }
@@ -63,6 +67,7 @@ li {
 }
 
 .no-bullet {
+	padding-left: 0;
 	list-style-type: none;
 }
 
