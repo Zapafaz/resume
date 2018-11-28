@@ -1,5 +1,5 @@
 # PDF CONVERSION
 
-open in IE (NOT Edge) or Chrome (Firefox is incapable of printing to PDF/XPS for some unknown reason)  
+open in Firefox or Chrome  
 print with no margins to Microsoft PDF printer  
-convert to pdf 1.3 using GSview
+open resulting PDF in GSview and export to pdf 1.3
